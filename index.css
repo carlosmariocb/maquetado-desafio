@@ -59,6 +59,7 @@ body {
 @media (min-width: 769px) {
     .intro__nav {
         flex-direction: row;
+        justify-content: space-around;
     }
 }
 
@@ -95,6 +96,8 @@ body {
        justify-content: space-around;
        align-items: center;
        padding: 0;
+       width: 40vw;
+       min-width: 513px;
     }
 
     .intro__link{
@@ -122,6 +125,7 @@ body {
         width: 100%;
         padding: 80px;
         padding-bottom: 0;
+        justify-content: space-around;
     }
 }
 
