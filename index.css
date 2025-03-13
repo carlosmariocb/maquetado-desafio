@@ -31,6 +31,11 @@ body {
     width: 100%;
     padding: 20px;
 }
+@media (min-width: 769px) {
+    .intro__header {
+        padding: 70px;
+    }
+}
 
 .intro__logo,
 .footer__logo {
@@ -38,10 +43,23 @@ body {
     max-height: 70px;
 }
 
+@media (min-width: 769px) {
+    .intro__logo {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
 .intro__nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media (min-width: 769px) {
+    .intro__nav {
+        flex-direction: row;
+    }
 }
 
 .intro__burger {
@@ -51,6 +69,12 @@ body {
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
+}
+
+@media (min-width: 769px) {
+    .intro__burger {
+        display: none;
+    }
 }
 
 .line {
@@ -64,6 +88,25 @@ body {
     list-style: none;
 }
 
+@media (min-width: 769px) {
+    .intro__list {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       align-items: center;
+       padding: 0;
+    }
+
+    .intro__link{
+        text-decoration: none;
+        color: black;
+        padding: 0 20px;
+        font-size: 24px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+
 .intro__welcome {
     height: 100%;
     padding-top: 90px;
@@ -73,7 +116,18 @@ body {
     justify-content: space-between;
 }
 
+@media (min-width: 769px) {
+    .intro__welcome {
+        flex-direction: row;
+        width: 100%;
+        padding: 80px;
+        padding-bottom: 0;
+    }
+}
+
 .intro__title {
+    max-width: 430px;
+    max-height: 155px;
     padding: 20px;
     margin: 0;
     font-weight: 700;
@@ -81,9 +135,25 @@ body {
     text-align: center;
 }
 
+@media (min-width: 769px) {
+    .intro__title {
+        font-size: 48px;
+        text-align: left;
+        padding: 0;
+        align-self: flex-start;
+    }
+}
+
 .intro__img {
     max-width: 300px;
     max-height: 318px;
+}
+
+@media (min-width: 900px) {
+    .intro__img {
+        max-width: 435px;
+        max-height: 395px;
+    }
 }
 
 .about-me {
@@ -95,10 +165,32 @@ body {
 
 .about-me__container {
     padding: 55px 30px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (min-width: 1000px) {
+    .about-me__container {
+        padding: 150px 300px;
+        flex-direction: row-reverse;
+    }
+}
+
+.about-me__text {
+    max-width: 312px;
+    align-content: center;
+    justify-items: center;
+}
+
+@media (min-width: 769px) {
+    .about-me__text {
+        justify-items: start;
+        max-width: 600px;
+        margin-left: 50px;
+    }
 }
 
 .about-me__title {
@@ -107,10 +199,22 @@ body {
     font-weight: 700;
 }
 
+@media (min-width: 769px) {
+    .about-me__title {
+        align-self: top;
+    }
+}
+
 .about-me__description {
     margin: 0 0 inherit 0;
     font-size: 16px;
     font-weight: 400;
+}
+
+@media (min-width: 769px) {
+    .about-me__description {
+        font-size: 24px;
+    }
 }
 
 .about-me__check {
@@ -119,24 +223,53 @@ body {
     margin: 41px auto 68px auto;
 }
 
+@media (min-width: 1100px) {
+    .about-me__check {
+        width: 211px;
+        height: 211px;
+        margin: 0;
+    }
+}
+
 .servicios{
     width: 100%;
-    height: 1500px;
+    max-height: 1600px;
+    padding-top: 50px;
+}
+
+@media (min-width: 1100px) {
+    .servicios {
+        height: 650px;
+    }
 }
 
 .servicios__container {
-    padding: 70px 52px;
-    height: 100%;
+    padding: 0 52px;
+    max-height: 1700px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
+@media (min-width: 1100px) {
+    .servicios__container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
 .servicios__title {
     margin: 0 0 inherit 0;
     font-size: 32px;
     font-weight: 700;
+    text-align: center;
+}
+
+@media (min-width: 1100px) {
+    .servicios__title {
+        font-size: 48px;
+    }
 }
 
 .servicios__info-container {
@@ -144,8 +277,15 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin: 0;
+    margin: 50px 0;
     text-align: center;
+    max-height: 400px;
+}
+
+@media (max-width: 1100px) {
+    .servicios__info-container:last-child {
+        margin-bottom: 100px;
+    }
 }
 
 .servicios__pc {
@@ -154,32 +294,62 @@ body {
 
 .servicios__info-title {
     margin: 15px 0;
+    font-size: 24px;
+    font-weight: 700;
 }
+
 
 .servicios__description {
     margin: 0;
+    max-width: 300px;
+    max-height: 180px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .form {
     background-color: black;
     width: 100%;
     height: 660px;
+    padding: 70px 20px;
+    color: white;
+}
+
+@media (min-width: 1100px) {
+    .form {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .form__container {
     display: grid;
-    gap: 25px;
-    padding: 70px 20px;
+    gap: 25px;    
     align-items: center;
     justify-content: center;
-    color: white;
+}
+@media (min-width: 1100px) {
+    .form__container {
+        align-self: center;
+        max-height: 448.5px;
+    }
 }
 
 .form__title {
-    margin: 0;
+    margin: 0 0 24px 0;
     font-weight: 700;
     font-size: 32px;
+    font-weight: 700;
     text-align: center;
+}
+
+@media (min-width: 1100px) {
+    .form__title {
+        margin: 0;
+        margin-right: 77px;
+        padding-top: 30px;
+        font-size: 48px;
+    }
 }
 
 .label {
@@ -202,6 +372,14 @@ body {
     border-radius: 4px;
 }
 
+@media (min-width: 1100px) {
+    .form__name,
+    .form__email,
+    .form__textarea {
+        width: 376px;
+    }
+}
+
 .form__textarea {
     min-height: 113px;
 }
@@ -215,6 +393,12 @@ body {
     font-weight: 700;
     border: none;
     margin-top: 40px;
+}
+
+@media (min-width: 1100px) {
+    .form__button {
+        width: 376px;
+    }
 }
 
 .form__button:hover {
@@ -232,6 +416,13 @@ body {
     height: 493px;
     background-color: white;
     background-image: url("./img/puntitos.svg");
+}
+
+@media (min-width: 1100px) {
+    .footer {
+        flex-direction: row;
+        height: 346px;
+    }
 }
 
 .footer__first-container {
@@ -261,6 +452,12 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+@media (min-width: 1100px) {
+    .footer__list {
+        gap: 40px;
+    }
 }
 
 .footer__list > li{
