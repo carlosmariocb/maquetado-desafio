@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Mario</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="intro">
+            <div class="intro__header">
+                <img src="./img/logo.png" alt="logo" class="intro__logo">
+                <nav class="intro__nav">
+                    <div class="intro__burger" id="burger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <ul class="intro__list" id="list">
+                        <li><a class="intro__link" href="#quien-soy">¿Quién soy?</a></li>
+                        <li><a class="intro__link" href="#servicios">Servicios</a></li>
+                        <li><a class="intro__link" href="#escribeme">Escríbeme</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="intro__welcome">
+                <h1 class="intro__title">¡Bienvenidos/as a mi sitio web!</h1>
+                <img src="./img/photo.png" alt="mypic" class="intro__img">
+            </div>
+        </section>
+        <section class="about-me" id="quien-soy">
+            <div class="about-me__container">
+                <h2 class="about-me__title">¿Quién soy?</h2>
+                <p class="about-me__description">Soy un desarrollador web con experiencia en HTML, CSS y JavaScript. Me
+                    especializo en crear interfaces de usuario atractivas y responsive. Tambien me encanta aprender
+                    cosas
+                    nuevas y desarrollar proyectos a medida.</p>
+                <img src="./img/check.svg" alt="check" class="about-me__check">
+            </div>
+        </section>
+        <section class="servicios" id="servicios">
+            <div class="servicios__container">
+                <h2 class="servicios__title">Mis servicios</h2>
+                <div class="servicios__info-container">
+                    <img src="./img/desktop.svg" alt="" class="servicios__pc">
+                    <h3 class="servicios__info-title">Desarrollo web</h3>
+                    <p class="servicios__description">Desarrollo de sitios web con HTML, CSS y JavaScript. Uso de
+                        frameworks
+                        y herramientas para mejorar la experiencia del usuario. Diseño responsive para adaptarse a
+                        diferentes dispositivos.</p>
+                </div>
+                <div class="servicios__info-container">
+                    <img src="./img/desktop.svg" alt="" class="servicios__pc">
+                    <h3 class="servicios__info-title">Web design</h3>
+                    <p class="servicios__description">Diseño de interfaces de usuario con HTML, CSS y JavaScript. Uso
+                        de
+                        frameworks y herramientas para mejorar la experiencia del usuario. Diseño responsive para
+                        adaptarse
+                        a diferentes dispositivos.</p>
+                </div>
+                <div class="servicios__info-container">
+                    <img src="./img/desktop.svg" alt="" class="servicios__pc">
+                    <h3 class="servicios__info-title">Creación de contenido</h3>
+                    <p class="servicios__description">Desarrollo de contenido para redes sociales, blogs y otros
+                        canales.
+                        Uso de herramientas para mejorar la calidad del contenido. Creación de contenido para redes
+                        sociales, blogs y otros canales.</p>
+                </div>
+            </div>
+        </section>
+        <section class="form">
+            <div class="form__container">
+                <h2 class="form__title">Escríbeme</h2>
+                <div class="fieldset">
+                    <label class="label" for="name">NOMBRE</label>
+                    <input class="form__name" name="name" id="name" type="text" placeholder="Escribe tu nombre">
+                </div>
+                <div class="fieldset">
+                    <label class="label" for="email">EMAIL</label>
+                    <input class="form__email" name="email" id="email" type="text" placeholder="tu-email@ejemplo.com">
+                </div>
+                <div class="fieldset">
+                    <label class="label" for="message">Mensaje</label>
+                    <textarea class="form__textarea" name="message" id="message"
+                        placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                <button class="form__button">Enviar</button>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__first-container">
+                <img src="./img/logo.png" alt="logo" class="footer__logo">
+                <p class="footer__copy">© 2025 Carlos Mario</p>
+            </div>
+            <div class="footer__second-container">
+                <ul class="footer__list">
+                    <li><img class="footer__icon" src="./img/instagram.svg" alt="instagram">
+                        <a href="https://instagram.com/" class="footer__link">Instagram</a>
+                    </li>
+                    <li><img class="footer__icon" src="./img/linkedin.svg" alt="linkedin">
+                        <a href="https://linkedin.com/" class="footer__link">Linkedin</a>
+                    </li>
+                    <li><img class="footer__icon" src="./img/github.svg" alt="github">
+                        <a href="https://github.com/" class="footer__link">Github</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
